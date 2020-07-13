@@ -1,8 +1,8 @@
 import requests
 
 base_url = 'https://localhost:'
-auth_url = base_url + '5001'
-messages_url = base_url + '5002'
+auth_url = base_url + '5001/auth'
+messages_url = base_url + '5002/messages'
 
 def get_all_messages():
     r = requests.get(messages_url)
