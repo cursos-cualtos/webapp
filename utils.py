@@ -6,12 +6,12 @@ messages_url = base_url + '5002/messages'
 
 def get_all_messages():
     r = requests.get(messages_url)
-    return r.json
+    return r.json()
 
 def get_message(id):
     r = requests.get(messages_url + '/' + id)
-    return r.json
+    return r.json()
 
 def get_auth(username):
     r = requests.get(auth_url + '/' + username)
-    return r.json
+    return r.json()
